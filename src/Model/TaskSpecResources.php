@@ -23,7 +23,7 @@ class TaskSpecResources
      *
      * @var ResourceObject
      */
-    protected $reservation;
+    protected $reservations;
 
     /**
      * An object describing the resources which can be advertised by a node and requested by a task.
@@ -54,9 +54,9 @@ class TaskSpecResources
      *
      * @return ResourceObject
      */
-    public function getReservation(): ?ResourceObject
+    public function getReservations(): ?ResourceObject
     {
-        return $this->reservation;
+        return $this->reservations;
     }
 
     /**
@@ -66,9 +66,9 @@ class TaskSpecResources
      *
      * @return self
      */
-    public function setReservation(?ResourceObject $reservation): self
+    public function setReservations(?ResourceObject $reservations): self
     {
-        $this->reservation = $reservation;
+        $this->reservations = $reservations;
 
         return $this;
     }
